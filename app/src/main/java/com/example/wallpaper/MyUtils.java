@@ -3,6 +3,7 @@ package com.example.wallpaper;
 import android.app.Activity;
 import android.app.WallpaperManager;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
@@ -257,6 +258,14 @@ public class MyUtils {
         url = url.substring(url.lastIndexOf("/") + 1);
         File newFile = new File(myDir, "Wallpaper_Crop_" + url);
         saveImageIntoMemory(activity,bitmap,newFile,false);
+    }
+
+    public static void shareApp(String content, Context context) {
+        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+        sharingIntent.setType("text/plain");
+        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
+        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, content);
+        context.startActivity(Intent.createChooser(sharingIntent, "Share Text"));
     }
 
 

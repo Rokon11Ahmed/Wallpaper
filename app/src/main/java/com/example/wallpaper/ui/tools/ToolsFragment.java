@@ -89,7 +89,7 @@ public class ToolsFragment extends Fragment implements EasyPermissions.Permissio
         mAdView = root.findViewById(R.id.sAdView);
         loadBanner();
 
-        mDatabase = FirebaseDatabase.getInstance().getReference().child("oneplus/.");
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("oneplus");
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
         intentFilter.addAction("android.net.wifi.WIFI_STATE_CHANGED");

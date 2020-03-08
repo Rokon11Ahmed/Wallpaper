@@ -1,12 +1,17 @@
 package com.example.wallpaper;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -50,6 +55,33 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.nav_share:
+                MyUtils.shareApp("http://play.google.com/store/apps/details?id=" + this.getPackageName(), this);
+                break;
+            case R.id.nav_rate_us:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + this.getPackageName())));
+                break;
+            case R.id.nav_exit:
+                new AlertDialog.Builder(this, R.style.DialogTheme)
+                        .setTitle("Exit")
+                        .setMessage("Are you sure you want to exit?")
+                        .setPositiveButton(android.R.string.yes, (dialog, which) -> {
+                            MainActivity.this.finish();
+
+                        })
+                        .setNegativeButton(android.R.string.no, null)
+                        .show();
+                break;
+            case R.id.nav_more:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q=pub:SunzTech")));
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
