@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Wallpaper</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">iPhone</string>
+    <string name="menu_slideshow">Samsung</string>
+    <string name="menu_tools">OnePlus</string>
+    <string name="menu_share">Xiaomi</string>
+    <string name="menu_send">Oppo</string>
+
+    <string name="app_id">ca-app-pub-9166385430984549~2646514954</string>
+
+
+    <!--Testing-->
+    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+</resources>
