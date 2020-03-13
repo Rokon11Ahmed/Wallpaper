@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:274111863492:android:0f1a3f76ddac6f23b90791",
         "android_client_info": {
-          "package_name": "com.example.wallpaper"
+          "package_name": "com.HemontoSoftware.wallpaper"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "274111863492-sc6d3cmbdpt2gj1f5i2mrea30oudieor.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.wallpaper",
+            "package_name": "com.HemontoSoftware.wallpaper",
             "certificate_hash": "2c5a8bf13d8a9c9dad0de19817ae5262eb8c393a"
           }
         },
