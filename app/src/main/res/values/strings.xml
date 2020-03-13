@@ -14,10 +14,10 @@
     <string name="menu_share">Xiaomi</string>
     <string name="menu_send">Oppo</string>
 
-    <string name="app_id">ca-app-pub-9166385430984549~2646514954</string>
+    <string name="app_id">ca-app-pub-2662649212284610~6243614920</string>
 
 
-    <!--Testing-->
-    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <!--ad unit-->
+    <string name="banner_id">ca-app-pub-2662649212284610/6473401984</string>
+    <string name="interstitial_id">ca-app-pub-2662649212284610/8996743101</string>
 </resources>

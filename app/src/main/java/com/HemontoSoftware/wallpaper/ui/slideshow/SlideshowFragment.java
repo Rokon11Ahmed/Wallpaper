@@ -103,6 +103,8 @@ public class SlideshowFragment extends Fragment implements EasyPermissions.Permi
         mDatabase.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                urls.clear();
+                name.clear();
                 for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
                     urls.add(dataSnapshot1.child("link").getValue().toString());
                     name.add(dataSnapshot1.child("name").getValue().toString());
